@@ -2,5 +2,26 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    overflow: auto;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+.side-note {
+    grid-area:1 / 1 /3 / 2 ;
+    background-color: rgba(20, 20, 182, 0.729);
+}
+
+.header{
+    grid-area: 1 /2/2/3;
+    background-color: aqua;
+}
+
+.main{
+    grid-area: 2 /2/3/3;
+    background-color: green;
+}
